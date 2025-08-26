@@ -17,12 +17,7 @@ public class Menu : MonoBehaviour
 
     public void Fase1()
     {
-        Invoke("Fase1", 1f);
-    }
-
-    public void Creditos()
-    {
-        SceneManager.LoadScene("Creditos");
+        SceneManager.LoadScene("Fase1");
     }
 
     public void MenuPrincipal()
