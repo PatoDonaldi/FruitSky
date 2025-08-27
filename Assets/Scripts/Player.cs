@@ -112,6 +112,11 @@ public class Player : MonoBehaviour
             pontosTotais++;
             textoPontos.text = pontosTotais.ToString();
         }
+
+        if (other.CompareTag("PassarFase"))
+        {
+            SceneManager.LoadScene("Creditos");
+        }
     }
 
     IEnumerator Destruir()
@@ -122,5 +127,7 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
         SceneManager.LoadScene("MenuPrincipal");
     }
+
+
 
 }
