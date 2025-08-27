@@ -120,7 +120,7 @@ public class Player : MonoBehaviour
         animator.SetBool("EstaVivo", false);
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MenuPrincipal");
     }
 
 }
